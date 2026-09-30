@@ -1,0 +1,365 @@
+/*
+ * Neamat Global design system — shared by neamatglobal.com and neamatcare.com.
+ *
+ * THEME LOCK: this file is the ONLY place colours may be defined.
+ *  - Tailwind's default palette is removed (`--color-*: initial`), so `bg-red-500`, `text-blue-600`,
+ *    `bg-slate-*` … do not exist. Only the tokens below generate colour utilities.
+ *  - Arbitrary colours in components (`bg-[#fff]`, `text-[rgb(...)]`, inline hex) are rejected by
+ *    ESLint (see @neamat/config/eslint/theme-lock).
+ *  - Brand tokens are verbatim from the Neamat Global App Plan (design tokens table). Every other
+ *    shade is DERIVED from them with color-mix — never a new hex. The only other literals are the
+ *    two status colours and the four business-unit logo colours seen in the design crops.
+ */
+@import "tailwindcss";
+@import "tw-animate-css";
+/* shadcn variants used by the generated primitives (data-open, data-closed, data-vertical …). */
+@import "shadcn/tailwind.css";
+
+/* Let Tailwind see class names used inside the shared package. */
+@source "../";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ── 1. Remove every default Tailwind colour ─────────────────────────────── */
+@theme {
+  --color-*: initial;
+}
+
+:root {
+  /* ── 2. Brand tokens (PDF — do not edit without a design change) ───────── */
+  --brand-navy-deep: #06284a;
+  --brand-navy: #0b4778;
+  --brand-gold: #e3bc62;
+  --brand-white: #ffffff;
+  --brand-text: #17344e;
+  --brand-muted: #64788b;
+  --brand-surface: #f5f8fb;
+
+  /* ── 3. Status colours (the only non-PDF values; AA on white) ──────────── */
+  --status-danger: #b42318; /* 6.57:1 on white */
+  --status-success: #0e7c56; /* NEAMAT CARE green from the design crops, darkened to 5.2:1 */
+
+  /* ── 3b. Business-unit logo colours (from the design crops; logo/icon tiles ONLY) ── */
+  --unit-neopure: #1c7fd6;
+  --unit-propertyos: #5a2d91;
+  --unit-booleanforce: #f26a21;
+  --unit-neamatcare: var(--status-success);
+
+  /* ── 4. Derived shades (mixes of brand tokens only) ─────────────────────── */
+  --brand-gold-hover: color-mix(in oklab, var(--brand-gold) 88%, var(--brand-navy-deep));
+  --brand-border: color-mix(in oklab, var(--brand-navy) 12%, var(--brand-white));
+  --brand-navy-soft: color-mix(in oklab, var(--brand-navy) 55%, var(--brand-white));
+  --brand-navy-faint: color-mix(in oklab, var(--brand-navy) 28%, var(--brand-white));
+  --brand-on-navy: color-mix(in oklab, var(--brand-white) 82%, var(--brand-navy-deep));
+  --brand-overlay: color-mix(in oklab, var(--brand-navy-deep) 60%, transparent);
+  /* Vibrancy layer — still pure mixes of brand tokens. */
+  --brand-gold-light: color-mix(in oklab, var(--brand-gold) 55%, var(--brand-white));
+  --brand-gold-deep: color-mix(in oklab, var(--brand-gold) 75%, var(--brand-navy-deep));
+  --brand-navy-bright: color-mix(in oklab, var(--brand-navy) 78%, var(--brand-white));
+  --brand-navy-ink: color-mix(in oklab, var(--brand-navy-deep) 82%, black);
+
+  /* ── 5. shadcn semantic roles → brand tokens ────────────────────────────── */
+  --radius: 0.625rem;
+  --background: var(--brand-white);
+  --foreground: var(--brand-text);
+  --card: var(--brand-white);
+  --card-foreground: var(--brand-text);
+  --popover: var(--brand-white);
+  --popover-foreground: var(--brand-text);
+  --primary: var(--brand-gold);
+  --primary-foreground: var(--brand-navy-deep);
+  --secondary: var(--brand-navy);
+  --secondary-foreground: var(--brand-white);
+  --muted: var(--brand-surface);
+  --muted-foreground: var(--brand-muted);
+  --accent: var(--brand-surface);
+  --accent-foreground: var(--brand-navy-deep);
+  --destructive: var(--status-danger);
+  --success: var(--status-success);
+  --warning: var(--brand-gold);
+  --border: var(--brand-border);
+  --input: var(--brand-border);
+  --ring: var(--brand-gold);
+
+  --chart-1: var(--brand-navy);
+  --chart-2: var(--brand-gold);
+  --chart-3: var(--brand-navy-soft);
+  --chart-4: var(--brand-navy-faint);
+  --chart-5: var(--brand-navy-deep);
+
+  --sidebar: var(--brand-navy-deep);
+  --sidebar-foreground: var(--brand-on-navy);
+  --sidebar-primary: var(--brand-gold);
+  --sidebar-primary-foreground: var(--brand-navy-deep);
+  --sidebar-accent: var(--brand-navy);
+  --sidebar-accent-foreground: var(--brand-white);
+  --sidebar-border: color-mix(in oklab, var(--brand-white) 10%, transparent);
+  --sidebar-ring: var(--brand-gold);
+
+  /* The design is light-only; keep OS dark mode from restyling form controls. */
+  color-scheme: light;
+}
+
+/* ── 6. The ONLY colour utilities that exist in this project ──────────────── */
+@theme inline {
+  /* Brand: bg-navy-deep, bg-navy, text-gold, text-body, text-muted-text, bg-surface … */
+  --color-navy-deep: var(--brand-navy-deep);
+  --color-navy: var(--brand-navy);
+  --color-gold: var(--brand-gold);
+  --color-gold-hover: var(--brand-gold-hover);
+  --color-white: var(--brand-white);
+  --color-body: var(--brand-text);
+  --color-muted-text: var(--brand-muted);
+  --color-surface: var(--brand-surface);
+  --color-on-navy: var(--brand-on-navy);
+  --color-overlay: var(--brand-overlay);
+  --color-gold-light: var(--brand-gold-light);
+  --color-gold-deep: var(--brand-gold-deep);
+  --color-navy-bright: var(--brand-navy-bright);
+  --color-navy-ink: var(--brand-navy-ink);
+  /* Business-unit logo colours — icon tiles and wordmark accents only, never UI chrome. */
+  --color-unit-neopure: var(--unit-neopure);
+  --color-unit-propertyos: var(--unit-propertyos);
+  --color-unit-booleanforce: var(--unit-booleanforce);
+  --color-unit-neamatcare: var(--unit-neamatcare);
+  /* `black` is kept only because shadcn overlays use bg-black/xx — it resolves to deep navy. */
+  --color-black: var(--brand-navy-deep);
+
+  /* shadcn semantic roles */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Fonts are provided by next/font in each app via these CSS variables. */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: var(--font-plex-arabic), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-bengali: var(--font-noto-bengali), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --container-site: 80rem;
+  --shadow-card:
+    0 1px 2px color-mix(in oklab, var(--brand-navy-deep) 4%, transparent),
+    0 4px 16px color-mix(in oklab, var(--brand-navy-deep) 6%, transparent);
+  --shadow-card-hover:
+    0 4px 8px color-mix(in oklab, var(--brand-navy-deep) 6%, transparent),
+    0 12px 28px color-mix(in oklab, var(--brand-navy-deep) 10%, transparent);
+  --shadow-elevated:
+    0 2px 6px color-mix(in oklab, var(--brand-navy-deep) 6%, transparent),
+    0 24px 48px -12px color-mix(in oklab, var(--brand-navy-deep) 22%, transparent);
+  --shadow-glow-gold:
+    0 0 0 1px color-mix(in oklab, var(--brand-gold) 35%, transparent),
+    0 10px 30px -6px color-mix(in oklab, var(--brand-gold) 55%, transparent);
+  --shadow-glow-navy: 0 20px 50px -12px color-mix(in oklab, var(--brand-navy) 55%, transparent);
+
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-slow: float 11s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 2.4s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+  --animate-shimmer: shimmer 3.2s linear infinite;
+  --animate-dash: dash 2.2s linear infinite;
+  --animate-marquee: marquee 38s linear infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.6);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+  @keyframes shimmer {
+    from {
+      background-position: 200% 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -24;
+    }
+  }
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  html[lang="ar"] body {
+    font-family: var(--font-plex-arabic), var(--font-inter), system-ui, sans-serif;
+  }
+  html[lang="bn"] body {
+    font-family: var(--font-noto-bengali), var(--font-inter), system-ui, sans-serif;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-navy-deep;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-gold;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ── Vibrancy utilities (brand tokens only) ─────────────────────────────── */
+@utility text-gradient-gold {
+  background-image: linear-gradient(
+    100deg,
+    var(--brand-gold-light) 0%,
+    var(--brand-gold) 45%,
+    var(--brand-gold-deep) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@utility text-gradient-navy {
+  background-image: linear-gradient(100deg, var(--brand-navy-deep), var(--brand-navy-bright));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@utility bg-mesh-navy {
+  background-color: var(--brand-navy-deep);
+  background-image:
+    radial-gradient(60% 80% at 85% 10%, color-mix(in oklab, var(--brand-navy-bright) 55%, transparent) 0%, transparent 60%),
+    radial-gradient(45% 60% at 10% 100%, color-mix(in oklab, var(--brand-gold) 22%, transparent) 0%, transparent 65%),
+    radial-gradient(40% 50% at 50% 50%, color-mix(in oklab, var(--brand-navy) 60%, transparent) 0%, transparent 70%);
+}
+@utility bg-mesh-light {
+  background-color: var(--brand-surface);
+  background-image:
+    radial-gradient(50% 60% at 0% 0%, color-mix(in oklab, var(--brand-gold) 16%, transparent) 0%, transparent 60%),
+    radial-gradient(55% 70% at 100% 100%, color-mix(in oklab, var(--brand-navy-bright) 14%, transparent) 0%, transparent 60%);
+}
+@utility bg-grid-navy {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--brand-navy) 4%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--brand-navy) 4%, transparent) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+@utility bg-grid-light {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--brand-white) 3.5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--brand-white) 3.5%, transparent) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+@utility bg-dots-gold {
+  background-image: radial-gradient(color-mix(in oklab, var(--brand-gold) 45%, transparent) 1.2px, transparent 1.4px);
+  background-size: 18px 18px;
+}
+@utility glass-light {
+  background-color: color-mix(in oklab, var(--brand-white) 72%, transparent);
+  border: 1px solid color-mix(in oklab, var(--brand-white) 80%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+}
+@utility glass-dark {
+  background-color: color-mix(in oklab, var(--brand-navy-deep) 55%, transparent);
+  border: 1px solid color-mix(in oklab, var(--brand-white) 14%, transparent);
+  backdrop-filter: blur(16px) saturate(140%);
+}
+@utility bg-shimmer-gold {
+  background-image: linear-gradient(
+    110deg,
+    var(--brand-gold) 0%,
+    var(--brand-gold-light) 22%,
+    var(--brand-gold) 44%,
+    var(--brand-gold) 100%
+  );
+  background-size: 200% 100%;
+}
+@utility mask-fade-b {
+  mask-image: linear-gradient(to bottom, black 55%, transparent);
+}
+@utility mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+}
+
+@layer utilities {
+  /* Centered page container used by every marketing section. */
+  .container-site {
+    width: 100%;
+    max-width: var(--container-site);
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-site {
+      padding-inline: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-site {
+      padding-inline: 2rem;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "@neamat/config/typescript/react-library.json",
+  "compilerOptions": {
+    "paths": {
+      "@neamat/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
