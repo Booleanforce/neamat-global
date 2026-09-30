@@ -1,0 +1,367 @@
+{
+  "Metadata": {
+    "title": "NEAMAT GLOBAL — Building Smarter Solutions for a Better Future",
+    "description": "NEAMAT GLOBAL is a diversified group of companies delivering innovative solutions across water technology, property management, digital technology and home & facility services."
+  },
+  "Common": {
+    "skipToContent": "Skip to content",
+    "logoLabel": "NEAMAT GLOBAL — home",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "comingSoon": "Coming soon",
+    "backHome": "Back to home",
+    "breadcrumb": "Breadcrumb",
+    "home": "Home"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "businesses": "Our Businesses",
+      "presence": "Global Presence",
+      "careers": "Careers",
+      "news": "News",
+      "contact": "Contact"
+    },
+    "navLabel": "Main navigation",
+    "language": "Language",
+    "search": "Search",
+    "menu": "Open menu",
+    "menuDescription": "Site navigation and language options",
+    "cta": "Get in Touch"
+  },
+  "Hero": {
+    "eyebrow": {
+      "solutions": "Solutions.",
+      "people": "People.",
+      "progress": "Progress.",
+      "together": "Together."
+    },
+    "titleLine1": "Building Smarter",
+    "titleLine2": "Solutions for a",
+    "titleHighlight": "Better Future.",
+    "description": "NEAMAT GLOBAL is a diversified group of companies, delivering innovative solutions across water technology, property management, digital technology and home & facility services — creating a smarter, more sustainable tomorrow.",
+    "cta": "Explore Our Businesses",
+    "secondaryCta": "Discover NEAMAT CARE",
+    "imageAlt": "Riyadh skyline at sunset with the Kingdom Centre tower",
+    "badge": "A diversified group · Riyadh & Dhaka",
+    "scroll": "Scroll to explore",
+    "unitsLabel": "Our business units",
+    "stats": {
+      "units": "Business Units",
+      "team": "Team Members",
+      "markets": "Core Markets"
+    }
+  },
+  "Cta": {
+    "eyebrow": "Let's Build Together",
+    "title": "Partner with a group built for what's next.",
+    "description": "Whether you're a customer, partner or future team member — our companies are ready to create lasting value with you.",
+    "primary": "Get in Touch",
+    "secondary": "Explore Our Businesses"
+  },
+  "AboutPage": {
+    "metaTitle": "About Us",
+    "metaDescription": "Learn about NEAMAT GLOBAL — a diversified group of companies built on trust, innovation and people, operating across Saudi Arabia and Bangladesh.",
+    "breadcrumb": "About Us",
+    "eyebrow": "About Neamat Global",
+    "title": "Building a group that",
+    "titleHighlight": "moves the region forward.",
+    "subtitle": "Four focused companies. Two core markets. One commitment to making everyday life smarter, healthier and more sustainable.",
+    "story": {
+      "eyebrow": "Our Story",
+      "title": "From one vision to four innovative companies.",
+      "p1": "NEAMAT GLOBAL was founded with a simple belief: the services people rely on every day — clean water, well-kept homes, reliable property and modern technology — deserve world-class standards.",
+      "p2": "Headquartered in Riyadh with operations in Bangladesh, we build and operate businesses that share one design system, one culture and one promise: solutions, people and progress, together.",
+      "badgeValue": "2",
+      "badgeLabel": "Core markets connected by one vision"
+    },
+    "pillars": {
+      "mission": {
+        "title": "Our Mission",
+        "text": "Deliver innovative, reliable solutions across water, property, technology and home services that improve everyday life."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "text": "Become the most trusted diversified group in the region — and grow from Saudi Arabia and Bangladesh to new markets worldwide."
+      },
+      "promise": {
+        "title": "Our Promise",
+        "text": "Verified professionals, transparent pricing and digital service you can track — in every company we run."
+      }
+    },
+    "values": {
+      "eyebrow": "Our Values",
+      "title": "What guides every decision we make.",
+      "items": {
+        "trust": {
+          "title": "Trust",
+          "text": "We earn it daily through honesty, transparency and keeping our word."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "text": "We use technology to make services simpler, smarter and faster."
+        },
+        "people": {
+          "title": "People",
+          "text": "Our teams, customers and communities are at the heart of what we build."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "text": "We set high standards and hold ourselves accountable to them."
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "text": "We create value that lasts — for the environment and future generations."
+        },
+        "integrity": {
+          "title": "Integrity",
+          "text": "We do the right thing, especially when no one is watching."
+        }
+      }
+    },
+    "journey": {
+      "eyebrow": "Our Journey",
+      "title": "Milestones on the road to global growth.",
+      "items": {
+        "founded": {
+          "label": "The Beginning",
+          "title": "Founded in Riyadh",
+          "text": "NEAMAT GLOBAL establishes its head office in Saudi Arabia with a vision for diversified growth."
+        },
+        "neopure": {
+          "label": "Water Technology",
+          "title": "NeaPure launches",
+          "text": "Advanced water purification for homes and industries becomes our first business unit."
+        },
+        "bangladesh": {
+          "label": "Expansion",
+          "title": "Operations in Bangladesh",
+          "text": "We open operations in Bangladesh, our second core market."
+        },
+        "digital": {
+          "label": "Digital",
+          "title": "PropertyOS & BooleanForce",
+          "text": "Property management SaaS and IT & digital technology join the group."
+        },
+        "care": {
+          "label": "2026",
+          "title": "NEAMAT CARE platform",
+          "text": "Home, facility and maintenance services go digital with the NEAMAT CARE marketplace."
+        },
+        "future": {
+          "label": "Next",
+          "title": "Future markets",
+          "text": "Taking our companies and standards to new markets across the region and beyond."
+        }
+      }
+    },
+    "units": {
+      "eyebrow": "Our Companies",
+      "title": "Four companies. One design system. One vision."
+    }
+  },
+  "Businesses": {
+    "eyebrow": "Our Businesses",
+    "title": "Four Innovative Companies.",
+    "intro": "We build and operate businesses that create lasting value, improve everyday life and drive sustainable growth.",
+    "items": {
+      "neopure": {
+        "category": "Water Technology",
+        "description": "Clean water. Healthier lives. Advanced water purification solutions for homes and industries.",
+        "imageAlt": "Clean water being poured into a glass"
+      },
+      "propertyos": {
+        "category": "Property Management SaaS",
+        "description": "Smarter property. Better living. Digital solutions for efficient property and facility management.",
+        "imageAlt": "Modern residential apartment building"
+      },
+      "booleanforce": {
+        "category": "IT & Digital Technology",
+        "description": "Ideas. Design. Digital growth. Technology solutions for a smarter, connected future.",
+        "imageAlt": "Laptop on a wooden work desk"
+      },
+      "neamatcare": {
+        "category": "Home, Facility & Maintenance Services",
+        "description": "Reliable care. Every day. Complete home, water, property and facility services.",
+        "imageAlt": "NEAMAT CARE technician in uniform inspecting an electrical panel"
+      }
+    },
+    "titleHighlight": "One Vision."
+  },
+  "About": {
+    "eyebrow": "About Neamat Global",
+    "title": "A Group Built on Trust,",
+    "description": "NEAMAT GLOBAL brings together a portfolio of forward-thinking companies, united by a shared commitment to excellence, sustainability and creating value for our customers, partners and communities.",
+    "cta": "Learn More About Us",
+    "imageAlt": "Neamat Global headquarters — a modern glass office tower",
+    "stats": {
+      "units": {
+        "value": "4",
+        "label": "Business Units"
+      },
+      "team": {
+        "value": "1000+",
+        "label": "Team Members"
+      },
+      "markets": {
+        "label": "Presence in Saudi Arabia & Bangladesh"
+      },
+      "vision": {
+        "label": "A Vision for Global Growth"
+      }
+    },
+    "titleHighlight": "Innovation and People."
+  },
+  "Featured": {
+    "eyebrow": "Featured Business",
+    "brandTagline": "Home, Facility & Maintenance Services",
+    "title": "Your Home.",
+    "titleLine2": "Our Care.",
+    "description": "One platform to maintain your home, property and everyday services.",
+    "cta": "Explore NEAMAT CARE",
+    "imageAlt": "A smiling family relaxing together at home",
+    "services": {
+      "water": {
+        "title": "WaterCare",
+        "description": "Water testing, purification & maintenance"
+      },
+      "home": {
+        "title": "HomeCare",
+        "description": "AC, plumbing, electrical, cleaning & more"
+      },
+      "property": {
+        "title": "PropertyCare",
+        "description": "For landlords, villas, apartments & buildings"
+      },
+      "facility": {
+        "title": "FacilityCare",
+        "description": "Offices, commercial & public facilities"
+      }
+    },
+    "checklist": {
+      "title": "Smart Home Management",
+      "items": {
+        "scheduled": "Scheduled Maintenance",
+        "verified": "Verified Professionals",
+        "warranty": "Service Warranty",
+        "history": "Digital Service History",
+        "booking": "Easy Online Booking"
+      }
+    }
+  },
+  "Presence": {
+    "eyebrow": "Global Presence",
+    "title": "Expanding Our Impact.",
+    "titleLine2": "Across Borders.",
+    "description": "From Saudi Arabia to Bangladesh, and beyond — we are building a stronger, more connected future across the region and the world.",
+    "cta": "View Our Presence",
+    "mapAlt": "World map highlighting Saudi Arabia and Bangladesh",
+    "markets": {
+      "saudi": {
+        "name": "Saudi Arabia",
+        "role": "Head Office",
+        "imageAlt": "Riyadh skyline at dusk"
+      },
+      "bangladesh": {
+        "name": "Bangladesh",
+        "role": "Operations",
+        "imageAlt": "Residential buildings in Dhaka, Bangladesh"
+      },
+      "future": {
+        "name": "Future Markets"
+      }
+    },
+    "chips": {
+      "hq": "Head office",
+      "ops": "Operations",
+      "next": "Next markets"
+    }
+  },
+  "News": {
+    "eyebrow": "Latest News & Insights",
+    "title": "Stay",
+    "description": "Get the latest updates on our business, innovations, partnerships and achievements.",
+    "cta": "View All News",
+    "items": {
+      "neopure": {
+        "title": "NEAPURE Launches Next-Gen Water Purifier Series",
+        "imageAlt": "Modern kitchen with a built-in water tap"
+      },
+      "booleanforce": {
+        "title": "BooleanForce Wins Digital Innovation Award",
+        "imageAlt": "A gold trophy held in hand"
+      },
+      "neamatcare": {
+        "title": "NEAMAT CARE Opens New Service Center in Riyadh",
+        "imageAlt": "Modern glass-fronted service center building"
+      },
+      "propertyos": {
+        "title": "PropertyOS and Leading Partners Sign Strategic Deal",
+        "imageAlt": "Two business partners shaking hands"
+      }
+    },
+    "titleHighlight": "Informed"
+  },
+  "Footer": {
+    "tagline": "Solutions. People. Progress. Together.",
+    "columns": {
+      "businesses": "Our Businesses",
+      "company": "Company",
+      "support": "Support"
+    },
+    "links": {
+      "about": "About Us",
+      "careers": "Careers",
+      "news": "News",
+      "contact": "Contact",
+      "help": "Help Center",
+      "customerSupport": "Customer Support",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "follow": "Follow Us",
+    "social": {
+      "linkedin": "NEAMAT GLOBAL on LinkedIn",
+      "youtube": "NEAMAT GLOBAL on YouTube",
+      "x": "NEAMAT GLOBAL on X",
+      "instagram": "NEAMAT GLOBAL on Instagram"
+    },
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "placeholder": "Enter your email address",
+      "submit": "Subscribe",
+      "invalidEmail": "Please enter a valid email address.",
+      "success": "Thank you — you're subscribed.",
+      "error": "Something went wrong. Please try again."
+    },
+    "copyright": "© {year} NEAMAT GLOBAL. All rights reserved.",
+    "closingLine": "Building a Smarter, More Sustainable Future Together."
+  },
+  "Chat": {
+    "open": "Chat with support",
+    "close": "Close chat",
+    "title": "NEAMAT GLOBAL Support",
+    "greeting": "Hello! How can we help you today?",
+    "placeholder": "Type your message…",
+    "send": "Send message",
+    "offline": "Live chat is launching soon. Please use Contact for now."
+  },
+  "Placeholder": {
+    "businesses": "Our Businesses",
+    "global-presence": "Global Presence",
+    "news": "News",
+    "neamat-care": "NEAMAT CARE",
+    "careers": "Careers",
+    "contact": "Contact",
+    "help": "Help Center",
+    "support": "Customer Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "description": "This page is being prepared and will be available soon."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for doesn't exist or has moved."
+  }
+}

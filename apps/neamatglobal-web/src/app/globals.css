@@ -1,0 +1,5 @@
+/* All tokens, base styles and the theme lock live in the shared design system. */
+@import "@neamat/ui/globals.css";
+
+/* Let Tailwind scan this app's sources. */
+@source "../";
