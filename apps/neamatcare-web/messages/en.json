@@ -1,0 +1,119 @@
+{
+  "Metadata": {
+    "title": "NEAMAT CARE — Your Home. Our Care.",
+    "description": "NEAMAT CARE service platform for Super Admins, Dealers and Technicians — WaterCare, HomeCare, PropertyCare and FacilityCare."
+  },
+  "Common": {
+    "brandTagline": "Home, Facility & Maintenance Services",
+    "tagline": "Your Home. Our Care.",
+    "partOf": "A NEAMAT GLOBAL company",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "Auth": {
+    "title": "Sign in to NEAMAT CARE",
+    "subtitle": "Super Admin, Dealer and Technician access",
+    "email": "Email address",
+    "emailPlaceholder": "you@company.com",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in…",
+    "invalidCredentials": "Incorrect email or password.",
+    "genericError": "We couldn't sign you in. Please try again.",
+    "invalidEmail": "Please enter a valid email address.",
+    "passwordTooShort": "Password must be at least 8 characters.",
+    "demoNotice": "Demo mode is on — use a demo account from .env.example.",
+    "trust": {
+      "scheduled": "Scheduled Maintenance",
+      "verified": "Verified Professionals",
+      "warranty": "Service Warranty",
+      "history": "Digital Service History"
+    }
+  },
+  "Roles": {
+    "super_admin": "Super Admin",
+    "dealer": "Dealer",
+    "technician": "Technician"
+  },
+  "Nav": {
+    "label": "Dashboard navigation",
+    "groups": {
+      "operations": "Operations",
+      "network": "Network",
+      "catalog": "Catalog",
+      "finance": "Finance",
+      "settings": "Settings",
+      "team": "Team",
+      "work": "My Work",
+      "account": "Account"
+    },
+    "items": {
+      "overview": "Overview",
+      "today": "Today",
+      "jobs": "Service Requests",
+      "liveMap": "Live Map",
+      "complaints": "Complaints & Escalations",
+      "supportInbox": "Support Inbox",
+      "dealers": "Dealers",
+      "technicians": "Technicians",
+      "customers": "Customers",
+      "catalog": "Service Catalog",
+      "pricebook": "Pricebook & Quotes",
+      "amc": "AMC Plans",
+      "inventory": "Spare Parts",
+      "payments": "Invoices & Payments",
+      "payouts": "Payouts",
+      "reports": "Reports & Analytics",
+      "markets": "Market Settings",
+      "settings": "Platform Settings",
+      "quotes": "Quotes",
+      "messages": "Messages",
+      "team": "My Team",
+      "performance": "Performance",
+      "portfolio": "Customer Portfolio",
+      "earnings": "Earnings",
+      "estimates": "Estimates",
+      "issues": "Issues",
+      "profile": "Profile"
+    }
+  },
+  "Topbar": {
+    "toggleSidebar": "Toggle sidebar",
+    "account": "Account menu",
+    "signOut": "Sign out",
+    "visitGlobal": "Visit neamatglobal.com",
+    "onDuty": "On duty",
+    "offDuty": "Off duty",
+    "locationSharing": "Location sharing"
+  },
+  "Dashboard": {
+    "welcome": "Welcome back, {name}",
+    "overviewSubtitle": "Here's the shape of your NEAMAT CARE workspace.",
+    "categories": {
+      "title": "Service categories",
+      "water": "WaterCare",
+      "home": "HomeCare",
+      "property": "PropertyCare",
+      "facility": "FacilityCare"
+    },
+    "modulesTitle": "Your modules",
+    "noData": "No data yet — connects to the FastAPI backend.",
+    "stats": {
+      "openJobs": "Open requests",
+      "activeTechnicians": "Active technicians",
+      "completedToday": "Completed today",
+      "avgRating": "Average rating"
+    }
+  },
+  "Placeholder": {
+    "badge": "Phase {phase}",
+    "title": "{module} is on the way",
+    "description": "This module is part of the NeamatCare roadmap. The screen shell and navigation are in place; data and workflows connect once the matching FastAPI module ships.",
+    "back": "Back to overview"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for doesn't exist or you don't have access to it.",
+    "back": "Go to my dashboard"
+  }
+}
